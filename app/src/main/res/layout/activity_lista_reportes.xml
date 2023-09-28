@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ListaReportesActivity"
+    android:background="#FFA500">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="287dp"
+        android:layout_height="85dp"
+        android:src="@drawable/logo09ut"></ImageView>
+
+    <ListView
+        android:id="@+id/listViewReportes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageViewLogo"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
