@@ -22,6 +22,7 @@ public class daoUsuario {
 
     String tabla2 = "create table if not exists Reportes_solved (id integer primary key autoincrement, title text, description text, photo blob, user_id integer)";
 
+    String tabla3 = "create table if not exists Sugerencias (id integer primary key autoincrement, comentarios text, user_id integer)";
 
     public daoUsuario (Context c) {
             this.c = c;
@@ -29,6 +30,7 @@ public class daoUsuario {
             sql.execSQL(tabla);
             sql.execSQL(tabla1);
             sql.execSQL(tabla2);
+            sql.execSQL(tabla3);
             u=new Usuario ();
         }
 
@@ -128,6 +130,12 @@ public boolean insertUsuario (Usuario u) {
         }
 
         return (sql.insert("Reportes", null, cv) > 0);
+    }
+    public  boolean insertSugerencia (String comentarios, int userId) {
+        ContentValues cv = new ContentValues();
+        cv.put("comentarios ", comentarios);
+        cv.put("user_id", userId);
+        return (sql.insert("Sugerencias", null, cv) > 0);
     }
 
 }

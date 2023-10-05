@@ -17,6 +17,9 @@
         android:theme="@style/Theme.App_Urbanismo_tactico"
         tools:targetApi="31">
         <activity
+            android:name=".Activities.SugerenciasActivity"
+            android:parentActivityName=".Activities.InicioActivity" />
+        <activity
             android:name=".Activities.TerminadasActivity"
             android:exported="false"
             android:label="@string/title_activity_terminadas"

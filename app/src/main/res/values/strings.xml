@@ -4,6 +4,7 @@
     <string name="item2">Ver estadisticas</string>
     <string name="item3">historial de reportes</string>
     <string name="item4">Salir</string>
+    <string name="item5">Comentarios y sugerencias</string>
 
     <string name="title_activity_terminadas">TerminadasActivity</string>
     <!-- Strings used for fragments for navigation -->
