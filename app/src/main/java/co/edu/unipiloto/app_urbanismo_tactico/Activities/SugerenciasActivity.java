@@ -22,6 +22,7 @@ public class SugerenciasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sugerencias);
 
+
         editTextSugerencias=(EditText)findViewById(R.id.editTextCommentarios);
         btnSugerencias= (Button) findViewById(R.id.buttonEnviarSug);
         //btnSugerencias.setOnClickListener(this);
@@ -35,6 +36,8 @@ public class SugerenciasActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
     private void saveComentToDatabase() {
 

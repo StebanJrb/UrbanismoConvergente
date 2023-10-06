@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import co.edu.unipiloto.app_urbanismo_tactico.DAO.daoUsuario;
 import co.edu.unipiloto.app_urbanismo_tactico.R;
@@ -30,6 +31,11 @@ public class ReportarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reportar);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         tittleDescription = findViewById(R.id.tittleReportDescription);
         editTextDescription = findViewById(R.id.TextDescription);

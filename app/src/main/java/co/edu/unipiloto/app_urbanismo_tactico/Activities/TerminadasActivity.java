@@ -12,8 +12,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-
+import androidx.appcompat.widget.Toolbar;
 
 
 import co.edu.unipiloto.app_urbanismo_tactico.R;
@@ -26,6 +25,11 @@ public class TerminadasActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_terminadas);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         btnTraerReportes = findViewById(R.id.buttonBringReports);
 

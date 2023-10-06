@@ -7,17 +7,31 @@
     tools:context=".Activities.TerminadasActivity"
     android:background="#FFA500">
 
-    <ImageView
-        android:id="@+id/imageViewLogo"
-        android:layout_width="287dp"
-        android:layout_height="85dp"
-        android:src="@drawable/logo09ut"></ImageView>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_orange_dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo09ut"/>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
 
     <ListView
         android:id="@+id/listReportesDone"
         android:layout_width="match_parent"
         android:layout_height="550dp"
-        android:layout_below="@+id/imageViewLogo"
+        android:layout_below="@+id/toolbar"
         android:layout_marginTop="16dp" />
 
     <Button

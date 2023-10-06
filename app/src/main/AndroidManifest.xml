@@ -21,6 +21,7 @@
             android:parentActivityName=".Activities.InicioActivity" />
         <activity
             android:name=".Activities.TerminadasActivity"
+            android:parentActivityName=".Activities.InicioActivity"
             android:exported="false"
             android:label="@string/title_activity_terminadas"
             android:theme="@style/Theme.App_Urbanismo_tactico" />
@@ -41,6 +42,7 @@
         </activity>
         <activity
             android:name=".Activities.ReportarActivity"
+            android:parentActivityName=".Activities.InicioActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -50,6 +52,7 @@
         </activity>
         <activity
             android:name=".Activities.ListaReportesActivity"
+            android:parentActivityName=".Activities.InicioActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
