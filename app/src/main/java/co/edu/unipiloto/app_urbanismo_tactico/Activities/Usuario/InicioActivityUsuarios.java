@@ -27,15 +27,6 @@ public class InicioActivityUsuarios extends AppCompatActivity {
 
         Button btnReportar = findViewById(R.id.buttonReportIncident);
         Button btnList = findViewById(R.id.buttonListIncidet);
-        Button btnSolucionados = findViewById(R.id.buttonSolved);
-
-        btnSolucionados.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intenti2 = new Intent(InicioActivityUsuarios.this, TerminadasActivityAdmin.class);
-                startActivity(intenti2);
-            }
-        });
 
         btnReportar.setOnClickListener(new View.OnClickListener() {
             @Override
