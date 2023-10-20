@@ -17,9 +17,8 @@ public class daoUsuario {
     ArrayList<Usuario> lista;
     static SQLiteDatabase sql;
     String bd ="BDUsuariosUT";
-    String tabla="create table if not exists RegistroUsuarios (id integer primary key autoincrement, nombre text,usuario text, cedula text, email text, pass text, confirmpass text )";
+    String tabla = "create table if not exists RegistroUsuarios (id integer primary key autoincrement, nombre text, usuario text, cedula text, email text, pass text, confirmpass text, isAdmin integer)";
     String tabla1 = "create table if not exists Reportes (id integer primary key autoincrement, title text, description text, photo blob, user_id integer)";
-
     String tabla2 = "create table if not exists Reportes_solved (id integer primary key autoincrement, title text, description text, photo blob, user_id integer)";
 
 
@@ -34,13 +33,14 @@ public class daoUsuario {
 
 public boolean insertUsuario (Usuario u) {
     if (buscar(u.getUsuario())==0){
-        ContentValues cv=new ContentValues ();
+        ContentValues cv = new ContentValues ();
         cv.put ("nombre",u.getNombre());
         cv.put ("usuario",u.getUsuario());
         cv.put ("cedula",u.getCedula());
         cv.put ("email",u.getEmail());
         cv.put ("pass",u.getPassword());
         cv.put("confirmpass",u.getConfirmpassword());
+        cv.put("isAdmin",u.getIsAdmin());
         return (sql.insert("RegistroUsuarios", null,cv)>0);
     }else {
         return false;
@@ -73,6 +73,7 @@ public boolean insertUsuario (Usuario u) {
                     u.setEmail(cr.getString(4));
                     u.setPassword(cr.getString(5));
                     u.setConfirmpassword(cr.getString(6));
+                    u.setIsAdmin(cr.getInt(7));
                     lista.add(u);
 
                 }while(cr.moveToNext());
@@ -80,19 +81,25 @@ public boolean insertUsuario (Usuario u) {
             return lista;
         }
 
-        public int login(String u, String p){
-            int a=0;
-            Cursor cr=sql.rawQuery ( "select * from RegistroUsuarios", null);
-            if(cr!=null&&cr.moveToFirst()){
-                do {
-                   if (cr.getString(2).equals(u)&&cr.getString(5).equals(p)){
-                       a++;
-                   }
-
-                }while(cr.moveToNext());
-            }
-            return a;
+    public int login(String u, String p) {
+        int tipoUsuario = 0;//Ningun tipo de usuario establecido
+        Cursor cr=sql.rawQuery ( "select * from RegistroUsuarios", null);
+        if(cr!=null&&cr.moveToFirst()){
+            do{
+                if(cr.getString(2).equals(u)&&cr.getString(5).equals(p)){
+                    int isAdmin = cr.getInt(7);
+                    if(isAdmin == 0){
+                        return  1;//Usuario normal
+                    }else if(isAdmin == 1){
+                        return  2;//Usuario administrador
+                    }
+                    break;
+                }
+            }while(cr.moveToNext());
+            cr.close();
         }
+        return tipoUsuario;
+    }
 
         public  Usuario getUsuario(String u, String p){
             lista = selectUsuario();

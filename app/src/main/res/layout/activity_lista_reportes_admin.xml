@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.ListaReportesActivity"
-    android:background="#FFA500">
+    tools:context=".Activities.Admin.ListaReportesActivityAdmin"
+    android:background="#3498DB">
 
     <ImageView
         android:id="@+id/imageViewLogo"

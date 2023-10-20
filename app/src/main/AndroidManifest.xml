@@ -17,12 +17,15 @@
         android:theme="@style/Theme.App_Urbanismo_tactico"
         tools:targetApi="31">
         <activity
-            android:name=".Activities.TerminadasActivity"
+            android:name=".Activities.Admin.TerminadasActivityAdmin"
             android:exported="false"
             android:label="@string/title_activity_terminadas"
             android:theme="@style/Theme.App_Urbanismo_tactico" />
         <activity
-            android:name=".Activities.InicioActivity"
+            android:name=".Activities.Usuario.InicioActivityUsuarios"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Admin.InicioActivityAdmin"
             android:exported="false" />
         <activity
             android:name=".Activities.RegistrarseActivity"
@@ -37,7 +40,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activities.ReportarActivity"
+            android:name=".Activities.Usuario.ReportarActivityUsuarios"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,7 +49,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activities.ListaReportesActivity"
+            android:name=".Activities.Usuario.ListaReportesActivityUsuarios"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.Admin.ListaReportesActivityAdmin"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

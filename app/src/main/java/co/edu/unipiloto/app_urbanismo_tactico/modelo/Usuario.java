@@ -1,20 +1,21 @@
 package co.edu.unipiloto.app_urbanismo_tactico.modelo;
 
 public class Usuario {
-    int Id;
-    String nombre, usuario, cedula, email, password, confirmpassword;
+    private int Id, isAdmin;
+    private String nombre, usuario, cedula, email, password, confirmpassword;
 
     public Usuario() {
 
     }
 
-    public Usuario(String nombre, String usuario, String email,String cedula, String password, String confirmpassword) {
+    public Usuario(String nombre, String usuario, String email,String cedula, String password, String confirmpassword,int userType) {
         this.nombre = nombre;
         this.usuario = usuario;
         this.cedula= cedula;
         this.email = email;
         this.password = password;
         this.confirmpassword = confirmpassword;
+        this.isAdmin = userType;
     }
 
     public boolean isNull (){
@@ -23,6 +24,15 @@ public class Usuario {
         }else {
             return true;
         }
+    }
+    public int getIsAdmin() { return isAdmin;}
+
+    public boolean setIsAdmin(int isAdmin){
+        if(isAdmin == 1 || isAdmin == 0){
+            this.isAdmin = isAdmin;
+            return true;
+        }else
+            return false;
     }
 
     public int getId() {
@@ -91,6 +101,7 @@ public class Usuario {
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", confirmpassword='" + confirmpassword + '\'' +
+                ",isAdmin =" + isAdmin + '\''+
                 '}';
     }
 }

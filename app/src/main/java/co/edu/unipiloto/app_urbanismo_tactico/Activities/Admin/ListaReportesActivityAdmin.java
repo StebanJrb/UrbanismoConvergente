@@ -1,10 +1,9 @@
-package co.edu.unipiloto.app_urbanismo_tactico.Activities;
+package co.edu.unipiloto.app_urbanismo_tactico.Activities.Admin;
 
 import android.annotation.SuppressLint;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -17,14 +16,14 @@ import java.util.Map;
 
 import co.edu.unipiloto.app_urbanismo_tactico.R;
 
-public class ListaReportesActivity extends AppCompatActivity {
+public class ListaReportesActivityAdmin extends AppCompatActivity {
 
     private ListView listViewReportes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_reportes);
+        setContentView(R.layout.activity_lista_reportes_admin);
 
         listViewReportes = findViewById(R.id.listViewReportes);
 

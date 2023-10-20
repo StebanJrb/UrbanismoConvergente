@@ -1,4 +1,4 @@
-package co.edu.unipiloto.app_urbanismo_tactico.Activities;
+package co.edu.unipiloto.app_urbanismo_tactico.Activities.Usuario;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -10,14 +10,13 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import co.edu.unipiloto.app_urbanismo_tactico.DAO.daoUsuario;
 import co.edu.unipiloto.app_urbanismo_tactico.R;
 import co.edu.unipiloto.app_urbanismo_tactico.modelo.Usuario;
 
-public class ReportarActivity extends AppCompatActivity {
+public class ReportarActivityUsuarios extends AppCompatActivity {
 
     private static final int REQUEST_IMAGE_CAPTURE = 1;
     private EditText editTextDescription, tittleDescription;
@@ -29,7 +28,7 @@ public class ReportarActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reportar);
+        setContentView(R.layout.activity_reportar_usuarios);
 
         tittleDescription = findViewById(R.id.tittleReportDescription);
         editTextDescription = findViewById(R.id.TextDescription);

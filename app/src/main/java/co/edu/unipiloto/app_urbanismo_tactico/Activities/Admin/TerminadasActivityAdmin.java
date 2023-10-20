@@ -1,4 +1,4 @@
-package co.edu.unipiloto.app_urbanismo_tactico.Activities;
+package co.edu.unipiloto.app_urbanismo_tactico.Activities.Admin;
 
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
@@ -6,7 +6,6 @@ import android.os.Bundle;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -18,14 +17,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import co.edu.unipiloto.app_urbanismo_tactico.R;
 
-public class TerminadasActivity extends AppCompatActivity {
+public class TerminadasActivityAdmin extends AppCompatActivity {
 
     private Button btnTraerReportes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_terminadas);
+        setContentView(R.layout.activity_terminadas_admin);
 
         btnTraerReportes = findViewById(R.id.buttonBringReports);
 
@@ -36,9 +35,9 @@ public class TerminadasActivity extends AppCompatActivity {
                 boolean result = copyAndDeleteFirstReport();
 
                 if (result) {
-                    Toast.makeText(TerminadasActivity.this, "Reporte copiado y eliminado con éxito", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TerminadasActivityAdmin.this, "Reporte copiado y eliminado con éxito", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(TerminadasActivity.this, "No se pudo realizar la acción", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TerminadasActivityAdmin.this, "No se pudo realizar la acción", Toast.LENGTH_SHORT).show();
                 }
             }
         });

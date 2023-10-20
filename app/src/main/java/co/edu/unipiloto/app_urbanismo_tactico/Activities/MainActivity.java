@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import co.edu.unipiloto.app_urbanismo_tactico.Activities.Admin.InicioActivityAdmin;
+import co.edu.unipiloto.app_urbanismo_tactico.Activities.Usuario.InicioActivityUsuarios;
 import co.edu.unipiloto.app_urbanismo_tactico.DAO.daoUsuario;
 import co.edu.unipiloto.app_urbanismo_tactico.R;
 import co.edu.unipiloto.app_urbanismo_tactico.modelo.Usuario;
@@ -34,26 +36,6 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-       /* switch (v.getId()){
-            case R.id.loginButton:
-                String u=user.getText().toString();
-                String p=pass.getText().toString();
-                if(u.equals("")&&p.equals("")){
-                    Toast.makeText(this,"error: campos vacios",Toast.LENGTH_LONG).show();
-                }else if(dao.login(u,p)==1){
-                    Usuario ux=dao.getUsuario(u,p);
-                    Toast.makeText(this,"datos correctos",Toast.LENGTH_LONG).show();
-                    Intent i2= new Intent(MainActivity.this,InicioActivity.class);
-                    i2.putExtra("id",ux.getId());
-                    startActivity(i2);
-                    finish();
-                }
-                break;
-            case R.id.registroButton:
-                Intent i= new Intent(MainActivity.this,RegistrarseActivity.class);
-                startActivity(i);
-                break;
-        }*/
         if (v.getId() == R.id.loginButton) {
             String u = user.getText().toString();
             String p = pass.getText().toString();
@@ -61,13 +43,20 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 Toast.makeText(this, "error: campos vacios", Toast.LENGTH_LONG).show();
             } else if (dao.login(u, p) == 1) {
                 Usuario ux = dao.getUsuario(u, p);
-                Toast.makeText(this, "datos correctos", Toast.LENGTH_LONG).show();
-                Intent i2 = new Intent(MainActivity.this, InicioActivity.class);
-                i2.putExtra("id", ux.getId());
-                startActivity(i2);
+                Toast.makeText(this, "Datos correctos, Login Usuario", Toast.LENGTH_LONG).show();
+                Intent intentUsuario = new Intent(MainActivity.this, InicioActivityUsuarios.class);
+                intentUsuario.putExtra("id", ux.getId());
+                startActivity(intentUsuario);
+                finish();
+            } else if (dao.login(u,p) == 2) {
+                Usuario uz = dao.getUsuario(u,p);
+                Toast.makeText(this, "Datos correctos, login Administrador", Toast.LENGTH_LONG).show();
+                Intent intentAdmin = new Intent(MainActivity.this, InicioActivityAdmin.class);
+                intentAdmin.putExtra("id", uz.getId());
+                startActivity(intentAdmin);
                 finish();
             }else{
-                Toast.makeText(this, "usuario y contraseña incorrectos", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Usuario y contraseña incorrectos", Toast.LENGTH_LONG).show();
             }
 
         }else if (v.getId() == R.id.registroButton) {

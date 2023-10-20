@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.TerminadasActivity"
-    android:background="#FFA500">
+    tools:context=".Activities.Admin.TerminadasActivityAdmin"
+    android:background="#3498DB">
 
     <ImageView
         android:id="@+id/imageViewLogo"
@@ -29,6 +29,6 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="5dp"
         android:backgroundTint="#FF5722"
-        android:text="Traer Reportes" />
+        android:text="Terminar Reporte" />
 
 </RelativeLayout>
