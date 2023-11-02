@@ -14,17 +14,17 @@
         android:src="@drawable/logo09ut"></ImageView>
 
     <ListView
-        android:id="@+id/listReportesDone"
+        android:id="@+id/listReportesDoneAdmin"
         android:layout_width="match_parent"
         android:layout_height="550dp"
         android:layout_below="@+id/imageViewLogo"
         android:layout_marginTop="16dp" />
 
     <Button
-        android:id="@+id/buttonBringReports"
+        android:id="@+id/buttonDeleteReport"
         android:layout_width="214dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/listReportesDone"
+        android:layout_below="@+id/listReportesDoneAdmin"
         android:layout_centerHorizontal="false"
         android:layout_marginStart="100dp"
         android:layout_marginTop="5dp"
