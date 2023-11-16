@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.Usuario.ListaReportesActivityUsuarios"
+    android:background="#FFA500">
+    <!-- INTERFAZ TOOLBAR -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_orange_dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo09ut"/>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- INTERFAZ TOOLBAR -->
+
+    <EditText
+        android:id="@+id/tittleReportDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Escriba un titulo de su reporte" />
+
+    <EditText
+        android:id="@+id/TextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/tittleReportDescription"
+        android:layout_marginBottom="30dp"
+        android:hint="Describa el incidente" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="335dp"
+        android:layout_below="@+id/TextDescription"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/buttonTakePhoto"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#FF5722"
+        android:text="Tomar Foto" />
+
+    <Button
+        android:id="@+id/attachPhoto"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonTakePhoto"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#FF5722"
+        android:text="Adjuntar Foto" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/attachPhoto"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#FF5722"
+        android:text="Enviar" />
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- INTERFAZ SUJERENCIAS Y COMENTARIOS DE USUARIOS -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFA500"
+    tools:context=".Activities.SugerenciasActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="96dp"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Comentarios y Sugerencias"
+        android:textColor="#333333"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextCommentarios"
+        android:layout_width="366dp"
+        android:layout_height="98dp"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="#ffffff"
+        android:hint="Escribe tu comentario o sugerencia"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonEnviarSug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCommentarios"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#FF5722"
+        android:elevation="4dp"
+        android:text="Enviar"
+        android:textSize="18sp" />
+
+    <!-- INTERFAZ TOOLBAR -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_orange_dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo09ut"/>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- INTERFAZ TOOLBAR -->
+
+</RelativeLayout>
+
+    <!-- INTERFAZ SUJERENCIAS Y COMENTARIOS DE USUARIOS -->
