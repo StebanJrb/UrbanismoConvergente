@@ -2,8 +2,11 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+<<<<<<< HEAD
     <!-- INTERFAZ MENU -->
 
+=======
+>>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
     <item
         android:id="@+id/item1"
         android:title="@string/item1" />
@@ -14,6 +17,7 @@
         android:id="@+id/item3"
         android:title="@string/item3" />
     <item
+<<<<<<< HEAD
         android:id="@+id/item5"
         android:title="Comentarios y Sugerencias" />
     <item
@@ -22,3 +26,8 @@
 </menu>
 
     <!-- INTERFAZ MENU -->
+=======
+        android:id="@+id/item4"
+        android:title="@string/item4" />
+</menu>
+>>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195

@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<<<<<<< HEAD
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     xmlns:map="http://schemas.android.com/apk/res-auto"
     android:background="#FFA500"
     android:orientation="vertical"
+=======
+    android:orientation="vertical"
+    android:background="#FFA500"
+>>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
     tools:context=".Activities.Usuario.InicioActivityUsuarios">
 
     <androidx.appcompat.widget.Toolbar
@@ -24,11 +34,20 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+<<<<<<< HEAD
                 android:src="@drawable/logo09ut" />
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
 
+=======
+                android:src="@drawable/logo09ut"/>
+         </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+>>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
     <Button
         android:id="@+id/buttonReportIncident"
         android:layout_width="299dp"
@@ -37,20 +56,31 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+<<<<<<< HEAD
         android:layout_marginStart="66dp"
         android:layout_marginEnd="54dp"
         android:layout_marginBottom="76dp"
+=======
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="590dp"
+>>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
         android:backgroundTint="#FF5722"
         android:text="Reportar Incidente" />
 
     <Button
+<<<<<<< HEAD
         android:id="@+id/buttonListIncident"
+=======
+        android:id="@+id/buttonListIncidet"
+>>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
         android:layout_width="301dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
+<<<<<<< HEAD
         android:layout_marginStart="65dp"
         android:layout_marginEnd="55dp"
         android:layout_marginBottom="22dp"
@@ -144,4 +174,13 @@
             android:layout_height="wrap_content"
             android:id="@+id/editTextDireccion" />
     </LinearLayout>
+=======
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="519dp"
+        android:backgroundTint="#FF5722"
+        android:text="Lista de Incidentes"
+        />
+
+>>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
 </RelativeLayout>

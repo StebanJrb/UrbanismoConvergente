@@ -8,7 +8,10 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import androidx.appcompat.app.AppCompatActivity;
+<<<<<<< HEAD
 import androidx.appcompat.widget.Toolbar;
+=======
+>>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,6 +30,7 @@ public class ListaReportesActivityUsuarios extends AppCompatActivity {
         setContentView(R.layout.activity_lista_reportes_usuarios);
 
         listViewReportes = findViewById(R.id.listViewReportes);
+<<<<<<< HEAD
         //SE MUESTRA EL TOOBAR
 
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -34,6 +38,8 @@ public class ListaReportesActivityUsuarios extends AppCompatActivity {
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //SE MUESTRA EL TOOBAR
+=======
+>>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
 
         // Obtén una instancia de la base de datos
         SQLiteDatabase sql = openOrCreateDatabase("BDUsuariosUT", MODE_PRIVATE, null);
