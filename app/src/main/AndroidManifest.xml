@@ -6,12 +6,9 @@
         android:name="android.hardware.camera"
         android:required="true" />
 
-<<<<<<< HEAD
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-=======
->>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -22,10 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App_Urbanismo_tactico"
         tools:targetApi="31">
-<<<<<<< HEAD
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="IzaSyBdTqlEjoquDG4pQm9WX8aAd5akLK7MeH"
+            android:value="AIzaSyBdTqlEjoquDG4pQm9WX8aAd5akLK7MeHA"
             />
         <activity
             android:name=".Activities.SugerenciasActivity"
@@ -33,10 +29,6 @@
         <activity
             android:name=".Activities.Admin.TerminadasActivityAdmin"
             android:parentActivityName=".Activities.Admin.InicioActivityAdmin"
-=======
-        <activity
-            android:name=".Activities.Admin.TerminadasActivityAdmin"
->>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
             android:exported="false"
             android:label="@string/title_activity_terminadas"
             android:theme="@style/Theme.App_Urbanismo_tactico" />
@@ -60,10 +52,7 @@
         </activity>
         <activity
             android:name=".Activities.Usuario.ReportarActivityUsuarios"
-<<<<<<< HEAD
             android:parentActivityName=".Activities.Usuario.InicioActivityUsuarios"
-=======
->>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -73,10 +62,7 @@
         </activity>
         <activity
             android:name=".Activities.Usuario.ListaReportesActivityUsuarios"
-<<<<<<< HEAD
             android:parentActivityName=".Activities.Usuario.InicioActivityUsuarios"
-=======
->>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -86,10 +72,7 @@
         </activity>
         <activity
             android:name=".Activities.Admin.ListaReportesActivityAdmin"
-<<<<<<< HEAD
             android:parentActivityName=".Activities.Admin.InicioActivityAdmin"
-=======
->>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -97,12 +80,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
 
     </application>
 </manifest>
-=======
-    </application>
-
-</manifest>
->>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195

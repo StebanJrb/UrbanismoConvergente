@@ -11,10 +11,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-<<<<<<< HEAD
 import androidx.appcompat.widget.Toolbar;
-=======
->>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
 
 import co.edu.unipiloto.app_urbanismo_tactico.DAO.daoUsuario;
 import co.edu.unipiloto.app_urbanismo_tactico.R;
@@ -34,7 +31,6 @@ public class ReportarActivityUsuarios extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reportar_usuarios);
 
-<<<<<<< HEAD
         //SE MUESTRA EL TOOBAR
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -42,8 +38,6 @@ public class ReportarActivityUsuarios extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //SE MUESTRA EL TOOBAR
 
-=======
->>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
         tittleDescription = findViewById(R.id.tittleReportDescription);
         editTextDescription = findViewById(R.id.TextDescription);
 

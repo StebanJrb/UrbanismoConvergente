@@ -7,19 +7,11 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-<<<<<<< HEAD
             <value value="C:\Users\steba\.android\avd\Copy_of_Copy_of_Pixel_3a_API_34_extension_level_7_x86_64.avd" />
-=======
-            <value value="C:\Users\steba\.android\avd\Copy_of_Pixel_3a_API_34_extension_level_7_x86_64.avd" />
->>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
-<<<<<<< HEAD
     <timeTargetWasSelectedWithDropDown value="2023-11-09T23:44:21.057423700Z" />
-=======
-    <timeTargetWasSelectedWithDropDown value="2023-10-05T21:31:57.949214400Z" />
->>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
   </component>
 </project>

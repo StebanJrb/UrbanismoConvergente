@@ -20,13 +20,9 @@ public class daoUsuario {
     String tabla = "create table if not exists RegistroUsuarios (id integer primary key autoincrement, nombre text, usuario text, cedula text, email text, pass text, confirmpass text, isAdmin integer)";
     String tabla1 = "create table if not exists Reportes (id integer primary key autoincrement, title text, description text, photo blob, user_id integer)";
     String tabla2 = "create table if not exists Reportes_solved (id integer primary key autoincrement, title text, description text, photo blob, user_id integer)";
-<<<<<<< HEAD
     //SE CREA LA TABLA SUGERENCIAS
     String tabla3 = "create table if not exists Sugerencias (id integer primary key autoincrement, comentarios text, user_id integer)";
     //SE CREA LA TABLA SUGERENCIAS
-=======
-
->>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
 
     public daoUsuario (Context c) {
             this.c = c;
@@ -34,10 +30,7 @@ public class daoUsuario {
             sql.execSQL(tabla);
             sql.execSQL(tabla1);
             sql.execSQL(tabla2);
-<<<<<<< HEAD
             sql.execSQL(tabla3);
-=======
->>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
             u=new Usuario ();
         }
 
@@ -146,7 +139,6 @@ public boolean insertUsuario (Usuario u) {
 
         return (sql.insert("Reportes", null, cv) > 0);
     }
-<<<<<<< HEAD
     //SE INSERTA LA SUGERENCIA A LA BASE DE DATOS
     public  boolean insertSugerencia (String comentarios, int userId) {
         ContentValues cv = new ContentValues();
@@ -154,8 +146,6 @@ public boolean insertUsuario (Usuario u) {
         cv.put("user_id", userId); //SE ASOCIA EL ID DEL USUARIO CON SU COMENTARIO
         return (sql.insert("Sugerencias", null, cv) > 0);
     }
-=======
->>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
 
 }
 

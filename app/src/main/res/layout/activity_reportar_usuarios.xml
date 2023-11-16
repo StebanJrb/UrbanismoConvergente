@@ -7,7 +7,6 @@
     android:orientation="vertical"
     tools:context=".Activities.Usuario.ListaReportesActivityUsuarios"
     android:background="#FFA500">
-<<<<<<< HEAD
     <!-- INTERFAZ TOOLBAR -->
 
     <androidx.appcompat.widget.Toolbar
@@ -30,13 +29,6 @@
     </androidx.appcompat.widget.Toolbar>
 
     <!-- INTERFAZ TOOLBAR -->
-=======
-    <ImageView
-        android:id="@+id/imageViewLogo"
-        android:layout_width="287dp"
-        android:layout_height="85dp"
-        android:src="@drawable/logo09ut"></ImageView>
->>>>>>> 95eb378cd965e594ef317a7141d759ea83af7195
 
     <EditText
         android:id="@+id/tittleReportDescription"
