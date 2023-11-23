@@ -77,6 +77,7 @@ public class InicioActivityUsuarios extends AppCompatActivity implements OnMapRe
 
         Button btnReportar = findViewById(R.id.buttonReportIncident);
         Button btnList = findViewById(R.id.buttonListIncident);
+        Button btnOdometro = findViewById(R.id.buttonOdometer);
 
         //Google maps
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
@@ -98,6 +99,15 @@ public class InicioActivityUsuarios extends AppCompatActivity implements OnMapRe
                 // Inicia la actividad ListaReportesActivity
                 Intent intenti4 = new Intent(InicioActivityUsuarios.this, ListaReportesActivityUsuarios.class);
                 startActivity(intenti4);
+            }
+        });
+
+        btnOdometro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Inicia la actividad odometro
+                Intent intenti5 = new Intent(InicioActivityUsuarios.this, OdometroActivity.class);
+                startActivity(intenti5);
             }
         });
 

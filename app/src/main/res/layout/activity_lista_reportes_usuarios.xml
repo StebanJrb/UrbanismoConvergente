@@ -30,6 +30,14 @@
 
     <!-- INTERFAZ TOOLBAR -->
 
+    <fragment
+        android:name="co.edu.unipiloto.app_urbanismo_tactico.Activities.Usuario.FragmentListReporteUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_list_u">
+
+    </fragment>
+
     <ListView
         android:id="@+id/listViewReportes"
         android:layout_width="match_parent"
