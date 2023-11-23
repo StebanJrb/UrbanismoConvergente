@@ -19,18 +19,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App_Urbanismo_tactico"
         tools:targetApi="31">
+        <service
+            android:name=".Activities.Usuario.OdometerService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <activity
+            android:name=".Activities.Usuario.OdometroActivity"
+            android:exported="false" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBdTqlEjoquDG4pQm9WX8aAd5akLK7MeHA"
-            />
+            android:value="AIzaSyBdTqlEjoquDG4pQm9WX8aAd5akLK7MeHA" />
+
         <activity
             android:name=".Activities.SugerenciasActivity"
             android:parentActivityName=".Activities.Usuario.InicioActivityUsuarios" />
         <activity
             android:name=".Activities.Admin.TerminadasActivityAdmin"
-            android:parentActivityName=".Activities.Admin.InicioActivityAdmin"
             android:exported="false"
             android:label="@string/title_activity_terminadas"
+            android:parentActivityName=".Activities.Admin.InicioActivityAdmin"
             android:theme="@style/Theme.App_Urbanismo_tactico" />
         <activity
             android:name=".Activities.Usuario.InicioActivityUsuarios"
@@ -52,8 +61,8 @@
         </activity>
         <activity
             android:name=".Activities.Usuario.ReportarActivityUsuarios"
-            android:parentActivityName=".Activities.Usuario.InicioActivityUsuarios"
-            android:exported="true">
+            android:exported="true"
+            android:parentActivityName=".Activities.Usuario.InicioActivityUsuarios">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -62,8 +71,8 @@
         </activity>
         <activity
             android:name=".Activities.Usuario.ListaReportesActivityUsuarios"
-            android:parentActivityName=".Activities.Usuario.InicioActivityUsuarios"
-            android:exported="true">
+            android:exported="true"
+            android:parentActivityName=".Activities.Usuario.InicioActivityUsuarios">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -72,14 +81,14 @@
         </activity>
         <activity
             android:name=".Activities.Admin.ListaReportesActivityAdmin"
-            android:parentActivityName=".Activities.Admin.InicioActivityAdmin"
-            android:exported="true">
+            android:exported="true"
+            android:parentActivityName=".Activities.Admin.InicioActivityAdmin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
+
 </manifest>

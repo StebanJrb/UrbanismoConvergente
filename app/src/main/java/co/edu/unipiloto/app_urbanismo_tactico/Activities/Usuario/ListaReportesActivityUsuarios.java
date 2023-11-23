@@ -1,6 +1,7 @@
 package co.edu.unipiloto.app_urbanismo_tactico.Activities.Usuario;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -27,8 +28,8 @@ public class ListaReportesActivityUsuarios extends AppCompatActivity {
         setContentView(R.layout.activity_lista_reportes_usuarios);
 
         listViewReportes = findViewById(R.id.listViewReportes);
-        //SE MUESTRA EL TOOBAR
 
+        //SE MUESTRA EL TOOBAR
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -75,5 +76,12 @@ public class ListaReportesActivityUsuarios extends AppCompatActivity {
         // Establece el adaptador en el ListView
         listViewReportes.setAdapter(adapter);
     }
+   /* @Override
+    public void itemCIicked(long id) {
+        Intent intent = new Intent(this, ListaReportesActivityUsuarios.class);
+        intent.putExtra(ListaReportesActivityUsuarios);
+        startActivity(intent);
+    }*/
+
 }
 

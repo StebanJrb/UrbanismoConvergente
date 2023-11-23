@@ -7,17 +7,29 @@
     tools:context=".Activities.Admin.ListaReportesActivityAdmin"
     android:background="#3498DB">
 
-    <ImageView
-        android:id="@+id/imageViewLogo"
-        android:layout_width="287dp"
-        android:layout_height="85dp"
-        android:src="@drawable/logo09ut"></ImageView>
-
     <ListView
         android:id="@+id/listViewReportes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/imageViewLogo"
         android:layout_marginTop="16dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_blue_light"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo09ut" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
 
 </RelativeLayout>
